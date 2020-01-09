@@ -1,0 +1,469 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/*---------------------------------------------------------------------
+ Gerneral Declarations
+---------------------------------------------------------------------*/
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: hsl(214, 64%, 98%);
+    Font-size: 18px;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+}
+h1,h2{
+font-family: 'Poppins', sans-serif;
+}
+button{
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+}
+a:hover,a i:hover{
+ color: hsl(322, 100%, 66%)!important;
+ transition: .5s color;
+}
+
+/*---------------------------------------------------------------------
+ Header Declarations
+---------------------------------------------------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 3rem 2rem;
+}
+.head button{
+    background-color: white;  
+    font-family: 'Poppins', sans-serif; 
+    border: none;
+    padding: .3rem 3rem;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.75);
+    color: hsl(265, 100%, 66%);
+}
+.head button:hover{
+    background-color: rgb(221, 221, 221); 
+    transition: .5s background-color; 
+}
+header>img{
+    width: 60%;
+}
+/* section */
+header section{
+    width: 40rem;
+    text-align: center;
+}
+header p,
+main p{
+    color: hsl(208, 11%, 55%);
+}
+
+header section button,
+main section:nth-of-type(2) button,
+.col-4 button{
+    background-color: hsl(322, 100%, 66%);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 1rem 4rem;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.75);
+    color: hsl(214, 64%, 98%);
+}
+header section button:hover,
+main section:nth-of-type(2) button:hover,
+.col-4 button:hover{
+    background-color: hsl(322, 77%, 57%);
+    transition: .5s background-color;
+}
+/*---------------------------------------------------------------------
+ Main Declarations
+---------------------------------------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section one 
+----------------------------*/
+main section:first-of-type{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+main section:first-of-type img{
+   width: 30rem;
+   align-self: center;
+}
+.side {
+    max-width: 33rem;
+} 
+/* section two
+----------------------------*/
+main section:nth-of-type(2){
+    margin-top: 10rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.75);
+    padding: 6rem 8rem;
+    text-align: center;
+    box-shadow: 1px 1px 56px -20px rgba(120,120,120,1);
+
+}
+main section:nth-of-type(2) h2{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+main section:nth-of-type(2) button{
+    margin-top: 30px;
+}
+
+
+/*---------------------------------------------------------------------
+ Footer Declarations
+---------------------------------------------------------------------*/
+footer{
+    background-color: #00242d;
+    color: white;
+    font-size: .85rem;
+    margin-top: 10rem;
+    padding-bottom: 5px;
+}
+footer img{
+    margin-top : 4rem;
+    margin-left : 2rem;
+    width: 11rem;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+.top a i{
+    font-size: 24px;
+    margin-right: 1rem;
+    color: hsl(214, 64%, 98%);
+}
+.col-1 p{
+    width: max-content;
+    font-size: .8rem;
+    color: hsl(214, 64%, 98%);
+}
+.col-2 a, .col-3 a{
+    text-decoration: none;
+    color: hsl(214, 64%, 98%);
+    display: block;
+    width: max-content;
+    margin-bottom: 1rem; 
+}
+.col-2,.col-3{
+    margin: 0 1rem;
+}
+.links{
+    display: flex;
+    min-width: max-content;
+    width: 10rem;
+    justify-content: space-between;
+}
+.col-4{
+    width:20rem;
+    font-size: .8rem;
+}
+.col-4 h2{
+    text-transform: uppercase;
+    margin-top:0 ;
+    font-weight: 600;
+}
+.col-4 input{
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: .5rem .5rem;
+}
+.col-4 button{
+    margin-top: 1rem;
+    padding: .8rem 2.6rem;
+    float: right;
+}
+/*---------------------------------------------------------------------
+ Mobile Meida Query Declarations
+---------------------------------------------------------------------*/
+@media screen and (max-width: 1075px){
+    main section:first-of-type{
+        flex-direction: column;
+        width: 100%;
+    }
+    main section:first-of-type img{
+        width: 80%;
+    }
+    .side{
+        text-align: center;
+        align-self: center;
+    }
+    .side p{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 768px){
+    .head img{
+        width: 12rem;
+        align-self: center;
+    }
+    .head{
+        min-width: max-content;
+    }
+    .head button{
+        width: max-content;
+        padding: .5rem 2rem;
+    }
+    header>img{
+        width: 80%;
+    }
+    header section{
+        width: 80%;
+    }
+    header p{
+        font-size: 1.3rem;
+    }
+    header section h1{
+        font-size: 1.6rem;
+    }
+    /*---------------------------------------------------------------------
+    Main Declarations
+    ---------------------------------------------------------------------*/
+    main section:first-of-type{
+        flex-direction: column;
+        width: 100%;
+    }
+    main section:first-of-type img{
+        width: 90%;
+        margin: 0 ;
+        margin-bottom: 10rem;
+    }
+    .side{
+        text-align: center;
+        align-self: center;
+    }
+    .side p{
+        max-width: 28rem;
+    }
+    .side h2{
+        width: max-content;
+        text-align: center;
+        display: block;
+        margin : 2rem auto 1rem;
+        font-weight: 600;
+    }
+    main section:nth-of-type(2){
+        padding: 2rem 0rem;
+        width:85%;
+        
+    }
+    main section:nth-of-type(2) h2{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    main section:nth-of-type(2) p{
+        font-family: 'Poppins', sans-serif;
+        font-size: .8rem;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    main section:nth-of-type(2) button{
+        margin: 0 auto;
+        font-size: .8rem;
+        padding: 1rem 3rem;
+    }
+    /*---------------------------------------------------------------------
+    Footer Declarations
+    ---------------------------------------------------------------------*/
+    .top{
+        flex-direction: column;
+    }
+    .links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-2 a, .col-3 a{
+        width: 100%;
+    }
+    .col-1{
+        order: 4;
+        align-self: center;
+        text-align: center;
+       
+    }
+    .col-4{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 6rem;
+        font-size: 1rem;
+    }
+    .col-4 button,
+    .col-4 input{
+        border-radius: 0;
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    footer img{
+        width: 12rem;
+        display: block;
+        margin: 0 auto;
+        padding: 4.5rem 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .side p{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px){
+    html{
+        font-size: 14px;
+    }
+    body{
+        font-size:14px;
+    }
+    /*---------------------------------------------------------------------
+    Header Declarations
+    ---------------------------------------------------------------------*/
+    header{
+        margin-bottom: 18rem;
+    }   
+    .head{
+        padding: 2rem 1rem ;
+        min-width: max-content;
+    }
+    .head img{
+        width: 10rem;
+        align-self: center;
+    }
+    .head button{
+        width: max-content;
+        padding: .5rem 2rem;
+    }
+    header>img{
+        width: 80%;
+    }
+    header section{
+        width: 80%;
+    }
+    header p{
+        font-size: 1.3rem;
+    }
+    header section h1{
+        font-size: 1.6rem;
+    }
+    header section button{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    /*---------------------------------------------------------------------
+    Main Declarations
+    ---------------------------------------------------------------------*/
+    main section:first-of-type{
+        flex-direction: column;
+        width: 100%;
+    }
+    main section:first-of-type img{
+        width: 90%;
+        margin-bottom: 10rem;
+    }
+    .side{
+        text-align: center;
+    }
+    .side h2{
+        width: max-content;
+        text-align: center;
+        display: block;
+        margin : 2rem auto 1rem;
+        font-weight: 600;
+    }
+    main section:nth-of-type(2){
+        padding: 2rem 0rem;
+        width:85%;
+        
+    }
+    main section:nth-of-type(2) h2{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    main section:nth-of-type(2) p{
+        font-family: 'Poppins', sans-serif;
+        font-size: .7rem;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    main section:nth-of-type(2) button{
+        margin: 0 auto;
+        font-size: .8rem;
+        padding: .5rem 3rem;
+    }
+    /*---------------------------------------------------------------------
+    Footer Declarations
+    ---------------------------------------------------------------------*/
+    .top{
+        flex-direction: column;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .col-1{
+        order: 4;
+        align-self: center;
+        text-align: center;
+       
+    }
+    .col-4{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 6rem;
+        font-size: 1rem;
+    }
+    .col-4 button,
+    .col-4 input{
+        border-radius: 0;
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    footer img{
+        width: 45%;
+        display: block;
+        margin: 0 auto;
+        padding: 4.5rem 0;
+    }
+    .attribution{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
